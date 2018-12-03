@@ -4,7 +4,7 @@ object Form1: TForm1
   BorderStyle = bsSingle
   Caption = 'Form1'
   ClientHeight = 370
-  ClientWidth = 541
+  ClientWidth = 752
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,6 +13,7 @@ object Form1: TForm1
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  Position = poDesktopCenter
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
@@ -53,13 +54,64 @@ object Form1: TForm1
       A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028
       A28A0028A28A00FFD9}
   end
+  object Label1: TLabel
+    Left = 392
+    Top = 221
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 488
+    Top = 120
+    Width = 31
+    Height = 13
+    Caption = 'Label3'
+  end
+  object Label4: TLabel
+    Left = 280
+    Top = 336
+    Width = 31
+    Height = 13
+    Caption = 'Label4'
+  end
+  object Label5: TLabel
+    Left = 400
+    Top = 304
+    Width = 31
+    Height = 13
+    Caption = 'Label5'
+  end
+  object Label6: TLabel
+    Left = 440
+    Top = 280
+    Width = 31
+    Height = 13
+    Caption = 'Label6'
+  end
+  object Label7: TLabel
+    Left = 208
+    Top = 8
+    Width = 31
+    Height = 13
+    Caption = 'Label7'
+  end
+  object Label8: TLabel
+    Left = 512
+    Top = 8
+    Width = 31
+    Height = 13
+    Caption = 'Label8'
+  end
   object RadioGroup2: TRadioGroup
     Left = 32
-    Top = 49
+    Top = 43
     Width = 305
-    Height = 145
+    Height = 158
     Caption = #1042#1072#1088#1080#1085#1072#1090#1099' '#1086#1090#1074#1077#1090#1086#1074
     TabOrder = 0
+    OnClick = RadioGroup2Click
   end
   object Button1: TButton
     Left = 224
@@ -92,5 +144,14 @@ object Form1: TForm1
       Caption = #1042#1099#1093#1086#1076
       OnClick = N1Click
     end
+    object N3: TMenuItem
+      Caption = #1057#1087#1088#1072#1074#1082#1072
+      OnClick = N3Click
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 496
+    Top = 40
   end
 end
